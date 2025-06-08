@@ -1,0 +1,7 @@
+{
+    "model": "gpt-4o",
+    "endpoint": "https://api.openai.com/v1/chat/completions",
+    "style": "conventional",
+    "tone": "precise",
+    "instructions": "Write a high-quality conventional commit message summarizing the following changes:"
+}

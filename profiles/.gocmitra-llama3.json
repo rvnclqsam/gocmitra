@@ -1,0 +1,8 @@
+{
+    "model": "llama3",
+    "endpoint": "http://localhost:11434/api/chat",
+    "style": "conventional",
+    "tone": "friendly",
+    "instructions": "Write a single-line Git commit message in the format: <type>: <description>. Do not include any explanations, bullet points, or extra output. Only output the commit message.",
+    "ticketPattern": ""
+}
