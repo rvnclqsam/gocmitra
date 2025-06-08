@@ -160,7 +160,7 @@ gocmitra completion fish | source
 
 | Provider  | Model Name                   | Notes                     |
 | --------- | ---------------------------- | ------------------------- |
-| OpenAI    | `gpt-4o`                     | Requires OPENAI\_API\_KEY |
+| OpenAI    | `gpt-4o`                     | Requires `OPENAI\_API\_KEY`|
 | Anthropic | `claude-3-5-sonnet-20241022` | Requires `CLAUDE_API_KEY` |
 | Ollama    | `llama3`                     | Local, privacy-friendly   |
 
