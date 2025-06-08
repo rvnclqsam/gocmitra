@@ -15,11 +15,11 @@
   <a href="https://www.go.dev/dl/" target="_blank">
     <img src="https://img.shields.io/badge/Go-1.21+-blue" alt="Go Version">
   </a>
-  <a href="https://github.com/Cre4T3Tiv3/gocmitra/releases" target="_blank">
-    <img src="https://img.shields.io/github/v/release/Cre4T3Tiv3/gocmitra?include_prereleases" alt="Release">
+  <a href="https://github.com/Cre4T3Tiv3/gocmitra/tags" target="_blank">
+    <img src="https://img.shields.io/github/v/tag/Cre4T3Tiv3/gocmitra" alt="Latest Tag">
   </a>
   <a href="https://github.com/Cre4T3Tiv3/gocmitra/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/github/license/Cre4T3Tiv3/gocmitra" alt="License: MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
   </a>
   <a href="https://github.com/Cre4T3Tiv3/gocmitra/stargazers" target="_blank">
     <img src="https://img.shields.io/github/stars/Cre4T3Tiv3/gocmitra?style=social" alt="GitHub Stars">
