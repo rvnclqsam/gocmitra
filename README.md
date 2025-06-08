@@ -175,7 +175,6 @@ Environment variables required:
 
 * [🔄 E2E Guide](docs/E2E-Guide.md) – How to integrate GoC Mitra in your dev flow
 * [🛠️ Contributing](CONTRIBUTING.md) – Setup, coding standards, and dev notes
-* [📦 Changelog](CHANGELOG.md) – Full version history and release notes
 
 ---
 

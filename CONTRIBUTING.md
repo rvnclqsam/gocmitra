@@ -13,7 +13,6 @@ gocmitra/
 ├── .gocmitra.json              # User or project config (generated)
 ├── .gitignore                  # Git exclusions
 ├── .golangci.yml               # Linter configuration
-├── CHANGELOG.md                # Release changelog
 ├── CONTRIBUTING.md             # Contribution guidelines
 ├── LICENSE                     # Project license
 ├── README.md                   # Project overview and usage
