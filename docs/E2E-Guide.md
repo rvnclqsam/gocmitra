@@ -145,8 +145,8 @@ feat: add LLM integration for commit message generation
 
 | Provider  | CLI Name   | Notes                     |
 | --------- | ---------- | ------------------------- |
-| OpenAI    | `gpt-4o`   | Requires `OPENAI\_API\_KEY`|
-| Anthropic | `claude-3` | Requires `CLAUDE\_API\_KEY`|
+| OpenAI    | `gpt-4o`   | Requires `OPENAI_API_KEY`|
+| Anthropic | `claude-3` | Requires `CLAUDE_API_KEY`|
 | Ollama    | `llama3`   | No API key required       |
 
 ---
