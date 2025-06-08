@@ -1,18 +1,12 @@
-<h1 align="center">GoC Mitra</h1>
-
-<p align="center"><em>
-🧠 An AI-powered Git commit assistant that analyzes your code changes and generates smart, conventional commits — right from your terminal.
-</em></p>
-
 <p align="center">
   <a href="https://github.com/Cre4T3Tiv3/gocmitra" target="_blank">
     <img src="https://raw.githubusercontent.com/Cre4T3Tiv3/gocmitra/main/docs/assets/gocmitra_v0.1.0.jpg" alt="GoC Mitra social preview" width="640"/>
   </a>
 </p>
 
-<p align="center">
-  <em>A Fast, Pluggable AI Commit Assistant — Built in Go. Works Everywhere.</em>
-</p>
+<p align="center"><em>
+🧠 An AI-powered Git commit assistant that analyzes your code changes and generates smart, conventional commits — right from your terminal.
+</em></p>
 
 <p align="center">
   <a href="https://github.com/Cre4T3Tiv3/gocmitra/actions/workflows/ci.yml?query=branch%3Amain" target="_blank">
